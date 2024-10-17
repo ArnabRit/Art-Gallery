@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art & Photography Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Art & Photography Gallery</h1>
+        <p>Explore our collections of beautiful artwork and photographs</p>
+    </div>
+
+    <div class="categories">
+        <div class="category-card" data-category="durga-puja">
+            <img src="durga ma/cover.jpg" alt="Durga Puja" class="category-image">
+            <div class="category-info">
+                <h2>Durga Puja Photos</h2>
+                <p>Beautiful moments from Durga Puja celebrations</p>
+            </div>
+        </div>
+
+        <div class="category-card" data-category="drawings">
+            <img src="art/cover.jpg" alt="Drawings" class="category-image">
+            <div class="category-info">
+                <h2>My Drawings</h2>
+                <p>Personal artwork and sketches</p>
+            </div>
+        </div>
+
+        <div class="category-card" data-category="nature">
+            <img src="nature/cover.jpg" alt="Nature" class="category-image">
+            <div class="category-info">
+                <h2>Nature Photos</h2>
+                <p>Capturing the beauty of nature</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-container" id="gallery-view">
+        <div class="gallery-header">
+            <h2 id="gallery-title">Gallery</h2>
+            <button class="back-button" onclick="showLanding()">Back to Categories</button>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+
+    <div class="modal" id="image-modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <div id="modal-content"></div>
+    </div>
+
+    <script src="gallery-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
